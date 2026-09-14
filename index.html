@@ -31,11 +31,11 @@
             background: transparent; 
         }
 
-        /* CAPA FIJA INDEPENDIENTE */
+        /* CAPA FIJA INDEPENDIENTE - Ahora utiliza fondo.jpg */
         .fixed-bg {
             position: fixed;
             top: 0; left: 0; width: 100vw; height: 100vh;
-            background: url('assets/fondo2.jpg') center/cover no-repeat;
+            background: url('assets/fondo.jpg') center/cover no-repeat;
             z-index: -10;
         }
 
@@ -266,7 +266,7 @@
 </head>
 <body>
 
-    <!-- CAPA FIJA DEL FONDO -->
+    <!-- CAPA FIJA DEL FONDO - AHORA CON fondo.jpg -->
     <div class="fixed-bg"></div>
 
     <!-- AUDIO Y BOTÓN DE CONTROL -->
@@ -277,7 +277,7 @@
         <i class="fa-solid fa-pause"></i>
     </button>
 
-    <!-- SOBRE DE INICIO BLANCO -->
+    <!-- SOBRE DE INICIO BLANCO - TAMBIÉN CON fondo.jpg EN EL CSS -->
     <div id="envelope-screen">
         <div class="envelope-wrapper" id="envelope">
             <div class="envelope-letter"><h2>Ambar</h2></div>
@@ -659,7 +659,6 @@
         // 5. Partículas de Brillo sobre el Glassmorphism y Fondo
         function createGlitterParticles() {
             const container = document.getElementById('particles-js');
-            // Nuevos colores para las partículas: blanco, rosita claro, lila y rosa
             const colors = ['#ffffff', '#FDF0F5', '#BCA0DC', '#F4A6C5']; 
             
             for (let i = 0; i < 40; i++) {
